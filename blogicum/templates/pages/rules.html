@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-  <head>    
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{% static 'img/fav/favicon.ico' %}" type="image">
@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <title>Наши правила</title>
   </head>
-  <body>	   
+  <body>
     <header>
       <nav class="navbar navbar-light" style="background-color: lightskyblue">
         <div class="container">
           <a class="navbar-brand" href="{% url 'blog:index' %}">
-            <img src="{% static 'img/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="{% static 'img/logo.png' %}" width="30" height="30"
+                 class="d-inline-block align-top" alt="Логотип">
             Блогикум
-          </a>        
+          </a>
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="nav-link" href="{% url 'blog:index' %}">Лента записей</a>
@@ -29,21 +30,39 @@
             <li class="nav-item">
               <a class="nav-link active" href="{% url 'pages:rules' %}">Наши правила</a>
             </li>
-          </ul>      
+          </ul>
         </div>
-      </nav> 
+      </nav>
     </header>
+
     <main>
-      <div class="container py-5">                        
+      <div class="container py-5">
         <h1>Наши правила</h1>
-        <p><strong>Самовыражение.</strong> У наших пользователей должна быть возможность создать что-то своё, выразить себя, свои мысли и чувства.</p>
-        <p><strong>Многообразие.</strong> Мы уважаем и приветствуем разные мнения и культуры. Блогикум — это место, объединяющее самых разных людей. Поделитесь своим уникальным взглядом на мир.</p>
-        <p><strong>Творчество.</strong> Не важно, в какой области вы творите, это может быть литература, дизайн, программирование. Наши инструменты помогут вам раскрыть талант максимально просто и комфортно.</p>
-        <p><strong>Личность.</strong> Мы сохраним ваши сокровенные мысли в тайне. Делитесь своей информацией только с теми, кого выбрали. Как и насколько засекречивать вашу личную информацию — определяете вы и только вы.</p>
+
+        <p>
+          <strong>Самовыражение.</strong> У наших пользователей должна быть возможность
+          создать что-то своё, выразить себя, свои мысли и чувства.
+        </p>
+        <p>
+          <strong>Многообразие.</strong> Мы уважаем и приветствуем разные мнения и культуры.
+          Блогикум — это место, объединяющее самых разных людей. Поделитесь
+          своим уникальным взглядом на мир.
+        </p>
+        <p>
+          <strong>Творчество.</strong> Не важно, в какой области вы творите —
+          литература, дизайн, программирование. Наши инструменты помогут вам
+          раскрыть талант максимально просто и комфортно.
+        </p>
+        <p>
+          <strong>Личность.</strong> Мы сохраним ваши сокровенные мысли в тайне.
+          Делитесь своей информацией только с теми, кого выбрали. Как и насколько
+          засекречивать вашу личную информацию — определяете вы и только вы.
+        </p>
       </div>
     </main>
+
     <footer class="border-top text-center py-3">
-      <p>© Блогикум</p>    
+      <p>© Блогикум</p>
     </footer>
   </body>
 </html>

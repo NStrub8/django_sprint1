@@ -16,7 +16,8 @@
       <nav class="navbar navbar-light" style="background-color: lightskyblue">
         <div class="container">
           <a class="navbar-brand" href="{% url 'blog:index' %}">
-            <img src="{% static 'img/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="{% static 'img/logo.png' %}" width="30" height="30"
+                 class="d-inline-block align-top" alt="Логотип">
             Блогикум
           </a>        
           <ul class="nav nav-pills">
@@ -33,6 +34,7 @@
         </div>
       </nav> 
     </header>
+
     <main>
       <div class="container py-5">
         <article>
@@ -40,18 +42,19 @@
             <li>Место: {{ post.location }}</li>
             <li>Дата: {{ post.date }}</li>
             <li>
-              Категория: 
+              Категория:
               <a href="{% url 'blog:category_posts' category_slug=post.category %}">
                 {{ post.category }}
               </a>
             </li>
-          </ul>         
-          <p>{{ post.text|linebreaks }}</p>          
+          </ul>
+          <p>{{ post.text|linebreaks }}</p>
         </article>                
       </div>
     </main>
+
     <footer class="border-top text-center py-3">
-      <p>© Блогикум</p>    
+      <p>© Блогикум</p>
     </footer>
   </body>
 </html>
